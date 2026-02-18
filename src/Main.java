@@ -47,7 +47,7 @@ public class Main {
         else
         {
             trash =  in.nextLine();
-            System.out.println("You said your wage was: " + trash);
+            System.out.println("You said your cost was: " + trash);
             System.out.println("Run again and enter a number value.");
         }
     }
