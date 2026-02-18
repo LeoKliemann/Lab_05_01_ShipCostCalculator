@@ -29,6 +29,7 @@ public class Main {
 
         if (in.hasNextDouble())
         {
+
             itemPrice = in.nextDouble();
             in.nextLine();
 
