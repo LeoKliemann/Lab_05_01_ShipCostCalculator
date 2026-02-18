@@ -24,5 +24,29 @@ public class Main {
         double shippingCost;
         double totalPrice;
         String trash = "";
+
+        System.out.println("What is the price of your item?");
+
+        if (in.hasNextDouble())
+        {
+            itemPrice = in.nextDouble();
+            in.nextLine();
+
+            if (itemPrice < 100)
+            {
+                shippingCost = itemPrice * .02;
+                totalPrice = shippingCost + itemPrice;
+                System.out.println("Your shipping cost is: $" + shippingCost + " and your total cost is: $" + totalPrice);
+            } else
+            {
+                System.out.println("Your total cost is: $" + itemPrice);
+            }
+        }
+        else
+        {
+            trash =  in.nextLine();
+            System.out.println("You said your wage was: " + trash);
+            System.out.println("Run again and enter a number value.");
+        }
     }
 }
