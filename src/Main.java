@@ -38,7 +38,8 @@ public class Main {
                 shippingCost = itemPrice * .02;
                 totalPrice = shippingCost + itemPrice;
                 System.out.println("Your shipping cost is: $" + shippingCost + " and your total cost is: $" + totalPrice);
-            } else
+            }
+            else
             {
                 System.out.println("Your total cost is: $" + itemPrice);
             }
